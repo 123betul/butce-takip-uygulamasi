@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import react from '@vitejs/react-refresh' // veya kullandığın mevcut react plugini
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: '/butce-takip-uygulamasi/', // <-- BU SATIRI TAM OLARAK BÖYLE EKLE
 })
